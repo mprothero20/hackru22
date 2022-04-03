@@ -12,7 +12,7 @@
 <body>
 
 <h1 style="text-align:center">Awareness</h1>
-  <p style="text-align:center"><img src="question_mark.jpg" alt="Awareness" class="center"></p>
+  <p style="text-align:center"><img src="imgs/question_mark.jpg" alt="Awareness" class="center"></p>
 <p>Q1. What percentage of STD cases are in people between the ages of 15-24?
 </p>
 <!--
@@ -50,13 +50,29 @@
 
   <script>
         function displayRadioValue(){
-          if(document.getElementByName() == '50%'){
-              document.write("Correct");
-            }
-            else{
-              document.write("Incorrect");
+          var ele = document.getElementsByName('answer2');
+              
+            for(i = 0; i < ele.length; i++) {
+               
+              if(ele[i].checked){
+                document.getElementById("result").innerHTML
+                        = "Answer: "+ele[i].value;
+              }
+              if(ele[i].value == '50'){
+                document.getElementById("result").innerHTML = "Correct, According to the American Sexual Health Association, 50% of STD cases are in people between ages 15-24, and only 12% of those actually get tested.";
+
+              }
+              else if(ele[i].value =='25'){
+                document.getElementById("answer1").innerHTML = "Incorrect";
+
+                
+               }
+
+              
+              
             }
         }
+        
     </script>
   
 </div>
