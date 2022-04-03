@@ -10,10 +10,10 @@
 <body>
 
 <h1 style="text-align:center">Outreach</h1>
-  <p style="text-align:center"><img src="" alt="outreach" class="center"></p>
+  <p style="text-align:center"><img src="imgs/Danger.png" alt="outreach" class="center"></p>
 <p> Are all STDs/STIs fatal? 
 </p>
-
+<!--
 <div id="Ans_Selection">
   <button id="A_Btn">
       A) Yes
@@ -27,6 +27,48 @@
   
     
 </div>
+-->
+  <div>
+  <input type="radio" id='answer1' name="answer1" value="Yes">Yes
+  <input type="radio" id='answer2' name="answer2" value="No">No
+  <input type="radio" id='answer3' name="answer3" value="Depends">Depends
+
+  <br>
+      
+    <button type="button" id="submit" onclick="displayRadioValue()">
+        Submit
+    </button>
+      
+  <br>
+
+  <div id="result"></div>
+
+    <script>
+        function displayRadioValue(){
+          var ele = document.getElementsByName('answer3');
+              
+            for(i = 0; i < ele.length; i++) {
+               
+              if(ele[i].checked){
+                document.getElementById("result").innerHTML
+                        = "Answer: "+ele[i].value;
+              }
+              if(ele[i].value == 'Depends'){
+                document.getElementById("result").innerHTML = "Correct,     It depends because many STIs can be cured through treatment. Yet, not all STDs are curable and need medication to help with the symptoms and keep the disease under control. If left untreated, some STDs & STIs can cause significant health issues in the future, and others can be fatal. Contact a medical professional immediately if you think you might have an STD or STI. ";
+
+              }
+              else if(ele[i].value =='No'){
+                document.getElementById("answer1").innerHTML = "Incorrect";
+
+                
+               }
+
+              
+              
+            }
+        }
+        
+    </script>
 
 </body>
 </html>
