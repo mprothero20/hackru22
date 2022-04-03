@@ -1,0 +1,42 @@
+*{
+  margin: 1;
+  box-sizing: border-box:
+}
+
+.center{
+
+  dis: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}
+
+.wow {
+  width: 100px;
+}
+
+body{
+  background-color: lightblue;
+  padding: 20px;
+}
+
+h1{
+  font-family: 'Times New Roman', verdana, arial, sans-serif;
+  text-decoration: underline;
+}
+
+button{
+  border-radius: 50px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+h4{
+  border-radius: 50px;
+  width: 500px;
+  padding:15px;
+  left:100px;
+}
+

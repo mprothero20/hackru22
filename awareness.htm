@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>awareness</title>
+  <link href="awareness_style.css" rel="stylesheet" type="text/css" />
+  <script src= "script.js"></script>
+</head>
+  
+<body>
+
+<h1 style="text-align:center">Awareness</h1>
+  <p style="text-align:center"><img src="question_mark.jpg" alt="Awareness" class="center"></p>
+<p>Q1. What percentage of STD cases are in people between the ages of 15-24?
+</p>
+<!--
+<div id="Ans_Selection">
+  <button id="A_Btn" value="25">
+      A) 25%
+    </button>
+  <button id="B_Btn" value="50">
+      B) 50%
+    </button>
+  <button id="C_Btn" value="69">
+      C) 69%
+    </button>
+  <button id="D_Btn" value="80">
+      D) 80%
+    </button>
+    
+</div>
+-->
+<div>
+  <input type="radio" id='answer1' name="answer1" value="25">25%
+  <input type="radio" id='answer2' name="answer2" value="50">50%
+  <input type="radio" id='answer3' name="answer3" value="69">69%
+  <input type="radio" id='answer4' name="answer4" value="80">80%
+
+  <br>
+      
+    <button type="button" id="submit" onclick="displayRadioValue()">
+        Submit
+    </button>
+      
+    <br>
+
+  <div id="result"></div>
+
+  <script>
+        function displayRadioValue(){
+          if(document.getElementByName() == '50%'){
+              document.write("Correct");
+            }
+            else{
+              document.write("Incorrect");
+            }
+        }
+    </script>
+  
+</div>
+
+</body>
+</html>
