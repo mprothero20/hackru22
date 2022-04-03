@@ -1,2 +1,2 @@
 # hackru22
-Sex Ed Quiz developed by Matthew Prothero, Alex Jara, Arvind Rambahal, and Michele Peralta
+SHE Wellness is a quiz app that is designed to test college students' knowledge of STDs, STIs, and safe sex practices.
